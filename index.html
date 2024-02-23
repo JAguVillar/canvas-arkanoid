@@ -1,0 +1,57 @@
+<title>Arkanoid en JavaScript</title>
+<style>
+    body {
+        background-color: #000;
+
+    }
+
+    canvas {
+        border: 4px solid #fff;
+        border-bottom: transparent;
+        background-color: #000;
+        margin: 0 auto;
+        display: block;
+    }
+</style>
+
+<canvas></canvas>
+
+<script>
+    const canvas = document.querySelector('canvas')
+    const ctx = canvas.getContext('2d')
+
+    canvas.width = 448
+    canvas.height = 400
+
+    // VARIABLES DE LA BOLA
+    const ballRadius = 4;
+    let x = canvas.width / 2
+    let y = canvas.height - 30
+    // Velocidad
+    let dx = 2
+    let dy = -2
+
+
+    function drawBall() {
+
+    }
+    function drawPaddle() { }
+    function drawBricks() { }
+
+    function checkCollision() { }
+    function ballMovement() { }
+    function paddleMovement() { }
+
+    function draw() {
+        // aqui se verifica las colisiones y se hacen los dibujos
+        drawBall()
+        drawPaddle()
+        drawBricks()
+        // draws
+
+        //colisiones y movinientos
+        window.requestAnimationFrame(draw)
+    }
+
+    draw()
+</script>
